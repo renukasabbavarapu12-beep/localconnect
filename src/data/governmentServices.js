@@ -1,0 +1,125 @@
+/**
+ * Curated seed data — for prototype purposes only.
+ * These records are NOT live-verified. Contact details and services may be
+ * outdated or approximate. No star ratings are assigned because no verified
+ * rating source exists for these records.
+ */
+
+export const governmentServices = [
+  {
+    id: 'gov-001',
+    name: 'Village/Ward Secretariat - Tagarapuvalasa',
+    type: 'Village Secretariat',
+    address: 'Gram Panchayat Building, Tagarapuvalasa',
+    distance: 0.5,
+    phone: '+91 0891 2701111',
+    hours: '10:00 AM - 5:00 PM (Mon-Sat)',
+    services: [
+      'Ration Card Services',
+      'Aadhaar Updates',
+      'Pension Disbursement',
+      'Birth/Death Certificates',
+      'Residence Certificates',
+      'Welfare Scheme Applications',
+    ],
+    image: 'secretariat',
+    schemeIds: ['scheme-009'],
+  },
+  {
+    id: 'gov-002',
+    name: 'Bheemunipatnam Municipal Office',
+    type: 'Municipal Office',
+    address: 'Municipal Office Road, Bheemunipatnam',
+    distance: 3.5,
+    phone: '+91 0891 2702222',
+    hours: '10:00 AM - 5:00 PM (Mon-Sat)',
+    services: [
+      'Property Tax',
+      'Water Connection',
+      'Building Permissions',
+      'Trade Licenses',
+      'Waste Management',
+      'Road & Drainage Complaints',
+    ],
+    image: 'municipal',
+    schemeIds: ['scheme-009'],
+  },
+  {
+    id: 'gov-003',
+    name: 'Revenue Office - Bheemunipatnam',
+    type: 'Revenue Office',
+    address: 'MRO Office, Bheemunipatnam',
+    distance: 3.8,
+    phone: '+91 0891 2703333',
+    hours: '10:30 AM - 5:00 PM (Mon-Sat)',
+    services: [
+      'Land Records (Adangal)',
+      'Passport Verification',
+      'Income Certificate',
+      'Caste Certificate',
+      'Land Registration',
+      'Survey Services',
+    ],
+    image: 'revenue',
+    schemeIds: [],
+  },
+  {
+    id: 'gov-004',
+    name: 'Agriculture Office - Padmanabham',
+    type: 'Agriculture Office',
+    address: 'Mandal Parishad Office, Padmanabham',
+    distance: 4.5,
+    phone: '+91 0891 2704444',
+    hours: '10:00 AM - 5:00 PM (Mon-Sat)',
+    services: [
+      'Soil Testing',
+      'Subsidy Distribution',
+      'Kisan Credit Card',
+      'Crop Insurance',
+      'Farmer Registration',
+      'Equipment Rental',
+    ],
+    image: 'agri-office',
+    schemeIds: ['scheme-010', 'scheme-011'],
+  },
+  {
+    id: 'gov-005',
+    name: 'Primary Health Centre - Tagarapuvalasa',
+    type: 'Health Centre',
+    address: 'PHC Building, Main Road, Tagarapuvalasa',
+    distance: 0.9,
+    phone: '+91 0891 2705555',
+    hours: '9:00 AM - 4:00 PM (Mon-Sat)',
+    services: [
+      'Free OPD',
+      'Maternity Services',
+      'Immunization',
+      'Family Planning',
+      'Health Screenings',
+      'TB & Malaria Treatment',
+    ],
+    image: 'phc-gov',
+    schemeIds: ['scheme-001', 'scheme-002'],
+  },
+  {
+    id: 'gov-006',
+    name: 'Employment Exchange Office',
+    type: 'Employment Office',
+    address: 'Rushikonda Road, Visakhapatnam',
+    distance: 2.0,
+    phone: '+91 0891 2706666',
+    hours: '10:00 AM - 5:00 PM (Mon-Fri)',
+    services: [
+      'Job Registration',
+      'Unemployment Allowance',
+      'Skill Training Programs',
+      'Placement Assistance',
+      'Career Counseling',
+    ],
+    image: 'employment',
+    schemeIds: ['scheme-006'],
+  },
+];
+
+export const getGovernmentServiceById = (id) =>
+  governmentServices.find((g) => g.id === id);
